@@ -171,7 +171,7 @@ function start() {
     createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
   }, 1000)
 
-  //createRock returns a rock
+  //callback returns a rock with random left location on the game
   //
   
 }
