@@ -108,7 +108,7 @@ if(checkCollision(rock)){
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  gameInterval = null;
+  clearInterval(gameInterval);
   //ROCKS.length = 0;
   for(var i=0; i<ROCKS.length; i++){
     ROCKS[i].remove();
