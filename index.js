@@ -118,7 +118,10 @@ if(checkCollision(rock)){
  */
 function endGame() {
   gameInterval = null;
-  ROCKS.length = 0;
+  //ROCKS.length = 0;
+  for(var i=0; i<ROCKS.length; i++){
+    ROCKS[i].remove();
+  }
   window.removeEventListener('keydown', moveDodger);
   return alert('YOU LOSE!');
 }
